@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Docker
+*.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node (if added later)
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Temp files
+*.tmp
+*.swp

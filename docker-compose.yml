@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: herodesignnetwork
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    volumes:
+      # Live-reload images during development — remove for production
+      - ./images:/usr/share/nginx/html/images:ro
